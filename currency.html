@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="currency.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Currency Converter</h1>
+      <form action="">
+        <div id="div1">
+          <p>Enter Amount</p>
+          <input
+            type="number"
+            name="amount"
+            id="amt"
+            max="9999999999999999999999"
+            min="1"
+            value="1"
+          />
+        </div>
+        <div style="display: inline-block">
+          <p>From</p>
+          <div class="spn">
+            <img id="img1" style="display: flex" />
+            <select name="frm" class="sp1" id="from"></select>
+          </div>
+        </div>
+        <div id="logo1" style="display: inline">
+          <img
+            src="icons8-exchange-64.png"
+            alt="no image"
+            id="img1"
+            style="margin: 40px 15px 0px 15px"
+          />
+        </div>
+        <div style="display: inline-block">
+          <p>To</p>
+          <div class="spn">
+            <img id="img2" style="display: flex" />
+            <select name="to" class="sp1" id="to"></select>
+          </div>
+        </div>
+        <div id="para1"></div>
+        <button type="button" id="btn">Get Exchange Rate</button>
+      </form>
+    </div>
+    <script src="codes.js"></script>
+    <script src="currency.js"></script>
+  </body>
+</html>
